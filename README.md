@@ -1,7 +1,29 @@
 # northLadder-PMS
 ## Product Management System
+## File structure
+```
+src/
+├── config
+│   └── database.ts
+├── interfaces
+│   ├── middlewares
+│   │   ├── http_logger.ts
+│   │   └── logger.ts
+│   └── router.ts
+├── modules
+│   └── products
+│       ├── controller
+│       │   └── product_controller.ts
+│       ├── dbmodel
+│       │   └── product.ts
+│       ├── repository
+│       │   └── product_repository.ts
+│       └── service
+│           └── product_service.ts
+└── server.ts
+```
 
-Steps to make <br>
+### Steps to set up the server <br>
 ```npm install```
 <br>
 make the .env file
@@ -20,3 +42,9 @@ PORT
 Execute this command
 
 ```npm run start_dev```
+# Further Improvements
+1. Use dependency injection
+2. Adding cache layer for fast retrieval of data
+3. Adding authentication and authorization and roles
+4. Write test
+
