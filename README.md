@@ -47,4 +47,4 @@ Execute this command
 2. Adding cache layer for fast retrieval of data
 3. Adding authentication and authorization and roles
 4. Write test
-
+5. Config can be made better for production stage and local env
