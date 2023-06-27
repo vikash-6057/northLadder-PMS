@@ -4,7 +4,7 @@ import 'dotenv/config'
 import sequelize from './config/database';
 import logger from './interfaces/middlewares/logger';
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5000
 const app = express();
 
 app.use(router);
