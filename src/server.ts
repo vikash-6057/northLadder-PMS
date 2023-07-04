@@ -13,8 +13,8 @@ function handleShutdown(): void {
     logger.info('shutting down node');
     process.exit(0);
 }
-process.on('SIGINT', handleShutdown);
-process.on('SIGTERM', handleShutdown);
+process.on('SIGINT', handleShutdown); // ctrl + c
+process.on('SIGTERM', handleShutdown); // kill pid
 
 sequelize.sync()
     .then(() => logger.info('Connected successfully'))
